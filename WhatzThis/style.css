@@ -1,0 +1,10 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    text-align: center;
+}
+
+#title {
+    font-weight: bolder;
+    color: blue;
+}
