@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background: #000000;
+    width: 75%;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+}
+
+li {
+    width: 300px;
+    background: #00eebb;
+    padding: 6px;
+}
