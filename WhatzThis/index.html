@@ -57,6 +57,16 @@
             clearTimeout(t);
             flipping = 0;
         }
+
+        function getLoc() {
+            var gps = navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    alert("Your Latitude is: " + latitude + " and your longitude is: " + longitude)
+                }
+            )
+        }
     </script>
 </head>
 <body>
@@ -94,6 +104,9 @@
             to have changing colors on your device. <br><br>
             created by WhatzThis Enterprises
         </p>
+    </div>
+    <div id="geolocation"> 
+        <input type="button" id="latlong" class="bigButton" value="GET LOC" onclick="getLoc();"> 
     </div>
 </body>
 </html>

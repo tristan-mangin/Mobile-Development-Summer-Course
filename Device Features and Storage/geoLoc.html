@@ -1,0 +1,30 @@
+<!-- type '! + ENTER' -->
+
+<!-- Type of document -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bar tag on website -->
+    <title>Template</title>
+    <script>
+        var gps = navigator.geolocation.getCurrentPosition(
+            
+        function (position) {  
+            for (key in position.coords) {
+                document.write(key+': '+ position.coords[key]);
+                document.write ('<br>');
+                }
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <!-- What's seen on the page -->
+</body>
+
+</html>
